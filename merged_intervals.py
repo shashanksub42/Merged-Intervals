@@ -19,7 +19,7 @@ def MergeInputs(inputs):
 if __name__ == "__main__":
     input1 = [[1, 3], [8, 10], [2, 6], [11, 14]]
     input2 = [[1, 3], [2, 6], [4, 8], [9, 11], [12, 13]]
-    print("Merged Intervals of input1:")
+    print("Merged Intervals of input1:", input1)
     print(MergeInputs(sorted(input1)))
-    print("Merged Intervals of input2:")
+    print("Merged Intervals of input2:", input2)
     print(MergeInputs(sorted(input2)))
