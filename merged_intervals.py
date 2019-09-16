@@ -6,9 +6,15 @@ def MergeInputs(inputs):
     output = []
     merged_list = inputs[0]
     for i in range(1, len(inputs)):
+        
+        #Check if end time of first interval is greater than end time of second interval
         if len(merged_list) !=0 and merged_list[1] > inputs[i][0]:
+            #Take minimum of the start time and maximum of the end time
             merged_list = [min(merged_list[0], inputs[i][0]), max(merged_list[1], inputs[i][1])]
+        
+        #Check if end time of first interval is the same as the start time of the second interval
         elif len(merged_list) !=0 and merged_list[1] == inputs[i][0]:
+            #Append the first interval to output and assign second interval to merged_list
             output.append(merged_list)
             merged_list = inputs[i]
         elif len(merged_list) != 0:
