@@ -20,6 +20,6 @@ if __name__ == "__main__":
     input1 = [[1, 3], [8, 10], [2, 6], [11, 14]]
     input2 = [[1, 3], [2, 6], [4, 8], [9, 11], [12, 13]]
     print("Merged Intervals of input1:")
-    MergeInputs(sorted(input1))
+    print(MergeInputs(sorted(input1)))
     print("Merged Intervals of input2:")
-    MergeInputs(sorted(input2))
+    print(MergeInputs(sorted(input2)))
